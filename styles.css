@@ -1,9 +1,15 @@
 :root{
     --primary-color: #2c2c2c;
     --secondary-color: #B99F58;
+    --secondary-transparent: #b99f58d3;
     --text-color: #fff;
     --transparent: rgba(0,0,0,0.8);
     --transparent-background: rgba(0,0,0,0.3);
+}
+
+@font-face {
+    font-family: "Brown Sugar";
+    src: url(./fonts/brown-sugar.ttf) format('truetype');
 }
 
 *{
@@ -14,7 +20,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Kaushan Script", Arial, Helvetica, sans-serif;
 }
 
 img{
@@ -47,6 +53,7 @@ img{
     left:-100vw;
     bottom: 8em;
     transition: all 1.5s ease;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .about.active{
@@ -61,6 +68,13 @@ img{
     flex-direction: column;
     opacity: 0;
     transition: all 1.5s ease;
+}
+
+.logo-container h1{
+    font-family: 'Brown Sugar', Arial, Helvetica, sans-serif;
+    color : var(--secondary-color);
+    font-size: 2.8em;
+
 }
 
 .logo-container.active{
@@ -151,13 +165,12 @@ img{
 }
 
 .page.detail .detail-box .title {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-transparent);
     padding: 1.3em;
-    border-bottom: 3px dashed var(--primary-color);
 }
 
 .page.detail .detail-box .desc {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-transparent);
     padding: 1.3em;
 }
 
